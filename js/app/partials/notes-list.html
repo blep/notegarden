@@ -1,0 +1,28 @@
+<div class="container-fluid" ng-controller="NoteListController">
+    <div class="row-fluid">
+        <div>
+            Search: <input ng-model="query">
+            Sort by:
+            <select ng-model="orderProp">
+                <option value="title">Alphabetical</option>
+                <option value="age">Newest</option>
+            </select>
+
+        </div>
+        <div>
+            <ul class="notes">
+                <li ng-repeat="note in notes | filter:query | orderBy:orderProp">
+                    <span><a href="#/notes/{{note.id}}">{{note.title}}</a></span>
+
+                    <blockquote>
+                        <div>
+                            Resource: <a href="{{note.resourceLink}}">{{note.resourceLink}}</a>
+                        </div>
+                        {{note.snippet}}
+                    </blockquote>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

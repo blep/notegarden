@@ -1,0 +1,23 @@
+[
+    {
+        "id": "angularjs_seo",
+        "title": "AngularJS and SEO",
+        "resourceLink": "http://www.yearofmoo.com/2012/11/angularjs-and-seo.html",
+        "snippet": "Summary: <ul><li>Use hash-bang url</li><li>Serve HTML produced by headless browser</li></ul>",
+        "age": 1
+    },
+    {
+        "id": "google_ajax_crawling",
+        "title": "Google: crawling AJAX document",
+        "resourceLink": "https://developers.google.com/webmasters/ajax-crawling/docs/getting-started",
+        "snippet": "Google documentation explaining how to structure web site to allow AJAX content to be indexed",
+        "age": 2
+    } ,
+    {
+        "id": "jquery_rich_text_editors",
+        "title": "List of rich text editor for jquery",
+        "resourceLink": "http://wiki.jqueryui.com/w/page/12138037/RichTextEditor",
+        "snippet": "",
+        "age": 0
+    }
+]

@@ -1,31 +1,17 @@
 'use strict';
 
 /* jasmine specs for controllers go here */
-
-describe('MyCtrl1', function(){
-  var myCtrl1;
-
-  beforeEach(function(){
-    myCtrl1 = new MyCtrl1();
-  });
+describe('NoteListController', function () {
+    var scope = {}
+    var controller;
 
 
-  it('should ....', function() {
-    //spec body
-  });
-});
+    beforeEach(function () {
+        controller = new NoteListController( scope );
+    });
 
 
-describe('MyCtrl2', function(){
-  var myCtrl2;
-
-
-  beforeEach(function(){
-    myCtrl2 = new MyCtrl2();
-  });
-
-
-  it('should ....', function() {
-    //spec body
-  });
+    it('should create "notes" with 3 notes', function () {
+        expect( scope.notes.length).toBe( 3 );
+    });
 });
