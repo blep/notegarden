@@ -18,7 +18,7 @@
                         <div>
                             Resource: <a href="{{note.resourceLink}}">{{note.resourceLink}}</a>
                         </div>
-                        {{note.snippet}}
+                        <div ng-bind-html-unsafe="note.snippet"></div>
                     </blockquote>
                 </li>
             </ul>
